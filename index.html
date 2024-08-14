@@ -17,13 +17,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
+    <!-- Navbar -->
     <header>
-      <nav class="w-4/5 m-auto flex justify-between my-7">
+      <nav class="w-4/5 m-auto flex flex-col lg:flex-row justify-center lg:justify-between items-center my-7">
         <div class="nav-logo">
           <h3 class="text-2xl font-bold">P-Ticket</h3>
         </div>
-        <div>
-          <ul class="flex gap-8">
+        <div class="my-4">
+          <ul class="flex flex-col lg:flex-row items-center gap-4">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Destination</a></li>
@@ -36,7 +37,92 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+        <!-- Banner section -->
+         <section id="banner" class="w-11/12 lg:w-4/5 m-auto">
+            <div class="lg:bg-[url(images/banner.png)] bg-no-repeat bg-center lg:min-h-[60vh] rounded-[30px] px-4 text-center relative">
+                <div class="absolute top-1/2 left-[30%] translate-x-[-20%] translate-y-[-50%]">
+                    <h2 class="text-4xl lg:text-6xl font-bold">End-to-End Travel with <br> <span class="text-[#1DD100]">P Paribahan</span></h2>
+                    <p class="text-sm  my-4">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                    <button id="buy-tickets" class="bg-[#1DD100] p-3 rounded-md font-bold lg:mb-8 text-white">Buy Tickets</button>
+
+                    <!-- sliders -->
+    
+                    <div class="flex flex-col lg:flex-row lg:gap-4 mt-8 lg:mt-0">
+    
+                        <div class="bg-white flex py-4 px-6 rounded-xl items-center border lg:text-left">
+                            <span class="mr-4"><img src="images/people.png" alt=""></span>
+                           <div>
+                            <h4 class="text-3xl font-bold mb-2">500K +</h4>
+                            <p class="text-[#03071299] text-sm">Registered users</p>
+                           </div>
+                        </div>
+    
+                        <div class="bg-white flex py-4 px-6 rounded-xl items-center my-4 lg:my-0 border lg:text-left">
+                            <span class="mr-4"><img src="images/ticket-cupon.png" alt=""></span>
+                           <div>
+                            <h4 class="text-3xl font-bold mb-2">1.7 lacks</h4>
+                            <p class="text-[#03071299] text-sm">Tickets sold</p>
+                           </div>
+                        </div>
+    
+                        <div class="bg-white flex py-4 px-6 rounded-xl items-center border lg:text-left">
+                            <span class="mr-4"><img src="images/stoppage.png" alt=""></span>
+                           <div>
+                            <h4 class="text-3xl font-bold mb-2">80K+</h4>
+                            <p class="text-[#03071299] text-sm">Rental partners</p>
+                           </div>
+                        </div>
+                        </div>
+                </div>
+                </div>
+            </div>
+         </section>
+
+         <!-- offers -->
+          <section id="offers" class="w-11/12 lg:w-4/5 mx-auto my-12 text-black">
+            <div class="flex flex-col lg:flex-row lg:gap-8 justify-center items-center">
+                <!-- first card -->
+                 <div  class="flex flex-row items-center gap-4 px-12 bg-[#FFBF0F] rounded-lg" >
+                    <div>
+                        <h3 class="text-3xl uppercase font-bold">
+                            15% off 
+                        </h3>
+                        <p class="font-semibold text-sm my-2">on your next purchase</p>
+                        <span class="text-sm">use by january 2024</span>
+                    </div>
+                    <div class="ml-12">
+                        <img src="images/cupon-devider.png" alt="">
+                    </div>
+                    <div class="">
+                        <h3 class="text-3xl font-bold">NEW 15</h3>
+                        <p class="text-sm ">Coupon Code</p>
+                    </div>
+                 </div>
+                <!-- second card -->
+                 <div  class="flex flex-row items-center gap-4 px-12 bg-[#F78C9C] rounded-lg mt-4 lg:mt-0" >
+                    <div>
+                        <h3 class="text-3xl uppercase font-bold">
+                            20% OFF 
+                        </h3>
+                        <p class="font-semibold text-sm my-2">on your next purchase</p>
+                        <span class="text-sm">use by January 2024</span>
+                    </div>
+                    <div class="ml-12">
+                        <img src="images/cupon-devider.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold">Couple 20</h3>
+                        <p class="text-sm ">Coupon Code</p>
+                    </div>
+                 </div>
+            </div>
+            <div class="flex justify-center mt-10">
+                <button class="text-[#1DD100] border px-4 py-2 border-[#1DD100] rounded-lg">See All Offers</button>
+            </div>
+          </section>
+          
+    </main>
     <footer></footer>
 
     <script src="scripts/utility.js"></script>

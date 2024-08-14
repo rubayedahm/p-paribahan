@@ -3,3 +3,15 @@
 body {
     font-family: "Raleway", sans-serif;
 }
+
+.divider {
+    position: relative;
+}
+
+.divider::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url('images/cupon-devider.png') ;
+}

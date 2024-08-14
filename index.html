@@ -1,16 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="style icon" href="images/favicon.ico" />
     <title>P-Paribahan</title>
+    <!-- CSs -->
+    <link rel="stylesheet" href="styles/style.css" />
     <!-- Tailwind css & daisy ui -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <header>
+      <nav class="w-4/5 m-auto flex justify-between my-7">
+        <div class="nav-logo">
+          <h3 class="text-2xl font-bold">P-Ticket</h3>
+        </div>
+        <div>
+          <ul class="flex gap-8">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Search</a></li>
+          </ul>
+        </div>
+        <div class="flex gap-2 items-center bg-[#1DD1001A] py-2 px-4 rounded-md">
+          <h6 class="text-[#1DD100]">Bus</h6>
+          <span><img src="images/bus-icon.png" alt="" /></span>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
 
     <script src="scripts/utility.js"></script>
-</body>
+  </body>
 </html>

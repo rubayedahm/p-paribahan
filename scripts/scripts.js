@@ -5,7 +5,7 @@ seats.forEach((seat) => {
   seat.addEventListener("click", () => {
     if (selectedSeats.length < 4) {
       seat.style.backgroundColor = "#1DD100";
-      selectedSeats.push(seat.textContent); // Store seat number
+      selectedSeats.push(seat.textContent);
       updateSelectedSeatsDisplay();
     } else {
       alert("You can only select 4 seats");
@@ -21,18 +21,35 @@ function updateSelectedSeatsDisplay() {
  
   
   const totalPrice = selectedSeats.length * 550;
-  totalTicketPriceElement.textContent = totalPrice
+  totalTicketPriceElement.textContent = totalPrice;
 
-  console.log(totalTicketPriceValue, totalPrice)
+//   coupon button
+const couponButton = document.getElementById('apply-coupon')
+
+  document.getElementById('coupon-input').addEventListener('keyup', function(e) {
+    const text = e.target.value;
+
+    if(text === "New 15") {
+       couponButton.removeAttribute('disabled')
+        
+    }
+    else if (text === "Couple 20") {
+        couponButton.removeAttribute('disabled')
+    }
+    else {
+        couponButton.setAttribute('disabled', true)
+    }
+})
+
+
+
+
+
 }
 
 function getSelectedSeatNumbers() {
   return selectedSeats;
 }
 
-// Total Ticket Price
-const totalTicketPriceElement = document.getElementById("total-ticket-price");
-const totalTicketPriceValue = totalTicketPriceElement.innerText;
+// Coupon 
 
-const totalPrice = selectedSeats.length * 550;
-console.log(totalPrice);
